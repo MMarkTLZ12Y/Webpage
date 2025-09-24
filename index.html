@@ -3,13 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>I love you</title>
+  <style>
+    #myImage {
+      display: none; /* Kezdetben rejtve */
+      margin-top: 20px;
+      max-width: 300px; /* méretezés */
+    }
+  </style>
 </head>
 <body>
 
     <p>I love you!</p>
-    <img id="myImage" src="iloveyou.gif">
-    <pre>Mark Miller</pre>
 
+  <button onclick="showImage()">Mutasd a képet</button>
+
+  <br>
+  <img id="myImage" src="iloveyou.gif">
+
+  <script>
+    function showImage() {
+      document.getElementById("myImage").style.display = "block";
+    }
+  </script>
 
 </body>
 </html>
